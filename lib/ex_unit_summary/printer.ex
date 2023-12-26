@@ -20,7 +20,7 @@ defmodule ExUnitSummary.Printer do
     failed_list =
       results
       |> Enum.filter(&filter_function(&1, filter_results))
-      |> Enum.sort_by(&{&1.file, &1.line, &1.case_result})
+      |> Enum.sort_by(&{&1.case_result, &1.file, &1.line})
       |> Enum.map(&build_row/1)
 
     if length(failed_list) > 0 do
