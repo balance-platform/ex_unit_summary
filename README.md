@@ -1,6 +1,6 @@
 # ExUnitSummary
 
-The library was created as an extension for EчUnit and adds test case output, just like Rspec does.
+The library was created as an extension for ExUnit and adds test case output, just like Rspec does.
 
 It's a very convenient life cycle for fixing and adding tests is obtained.
 
