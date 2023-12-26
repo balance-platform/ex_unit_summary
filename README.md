@@ -16,7 +16,7 @@ See the example below
 ```elixir
 def deps do
   [
-    {:ex_unit_summary, "~> 0.1.0", only: [:dev, :test]}}
+    {:ex_unit_summary, "~> 0.1.0", only: [:dev, :test]}
   ]
 end
 ```
