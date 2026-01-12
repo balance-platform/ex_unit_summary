@@ -21,6 +21,10 @@ defmodule ExUnitSummary.Formatter do
     {:noreply, ex_unit_config}
   end
 
+  def handle_cast(:max_failures_reached, ex_unit_config) do
+    {:noreply, ex_unit_config}
+  end
+
   def handle_cast({_event_type, _event_data} = event, ex_unit_config) do
     case_result = CaseResult.from_exunit_event(event)
     Recorder.write(case_result)
